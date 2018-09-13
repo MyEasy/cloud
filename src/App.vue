@@ -2,15 +2,17 @@
   <div id="app">
     <my-header></my-header>
     <!-- <img src="./assets/logo.png"> -->
+    <my-sidebar></my-sidebar>
     <router-view/>
   </div>
 </template>
 
 <script>
 import myHeader from './components/header'
+import mySidebar from './components/sidebar'
 export default {
   name: 'App',
-  components: {myHeader}
+  components: {myHeader, mySidebar}
 }
 </script>
 
