@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="yunguantubiao-yuanjiao_aliyun" unicode="&#59214;" d="M174.933333 251.733333V516.266667a21.333333 21.333333 0 0 0 17.066667 21.333333l230.4 55.466667 14.933333 74.666666H172.8a128 128 0 0 1-128-128v-311.466666a128 128 0 0 1 128-128h264.533333l-14.933333 74.666666L192 230.4a21.333333 21.333333 0 0 0-17.066667 21.333333zM849.066667 251.733333V516.266667a21.333333 21.333333 0 0 1-17.066667 21.333333l-230.4 55.466667-14.933333 74.666666h264.533333a128 128 0 0 0 128-128v-311.466666a128 128 0 0 0-128-128H586.666667l14.933333 74.666666L832 230.4a21.333333 21.333333 0 0 1 17.066667 21.333333zM388.266667 409.6h253.866666v-32H388.266667z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
