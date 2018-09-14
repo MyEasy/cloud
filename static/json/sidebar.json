@@ -1,0 +1,67 @@
+[
+  {
+    "title": "防火墙",
+    "icon": "iconfont icon-fanghuoqiang",
+    "link": "fw"
+  },
+  {
+    "title": "IPS",
+    "icon": "iconfont icon-IPS",
+    "link": "ips"
+  },
+  {
+    "title": "防病毒",
+    "icon": "iconfont icon-xunifangbingduxitong",
+    "link": "av"
+  },
+  {
+    "title": "负载均衡",
+    "icon": "iconfont icon-fuzaijunheng",
+    "link": "lb"
+  },
+  {
+    "title": "NAT",
+    "icon": "iconfont icon-nat",
+    "link": "nat"
+  },
+  {
+    "title": "VPN",
+    "icon": "iconfont icon-VPNwangguan",
+    "link": "vpn"
+  },
+  {
+    "title": "DDoS",
+    "icon": "iconfont icon-ddos",
+    "link": "ddos"
+  },
+  {
+    "title": "WAF",
+    "icon": "iconfont icon-waf",
+    "link": "waf"
+  },
+  {
+    "title": "应用监控",
+    "icon": "iconfont icon-yingyongjiankong",
+    "link": "monitor"
+  },
+  {
+    "title": "漏洞扫描",
+    "icon": "iconfont icon-loudongsaomiao",
+    "link": "leakscan"
+  },
+  {
+    "title": "态势感知",
+    "icon": "iconfont icon-taishiganzhi",
+    "link": "nssa"
+  },
+  {
+    "title": "运维审计",
+    "icon": "iconfont icon-13yunweishenji",
+    "link": "operationalaudit"
+  },
+  {
+    "title": "数据库审计",
+    "icon": "iconfont icon-shujukushenji",
+    "link": "dbaudit"
+  }
+]
