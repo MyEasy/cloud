@@ -1,5 +1,5 @@
 <template>
-  <div class="sc-fw-div">FW</div>
+  <div class="sc-lb-div">LB</div>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style scoped>
-  .sc-fw-div{
+  .sc-lb-div{
     width: 500px;
     height: 1500px;
   }

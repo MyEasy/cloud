@@ -18,9 +18,17 @@ export default {
 <style scoped>
   .sc-content-div{
     position: relative;
-    top: 50px;
-    left: 250px;
-    width: 100%;
-    height: 1000px;
+    height: calc(100% - 50px);
+    margin-top: 50px;
+    margin-left: 50px;
+    overflow-y: auto;
+    /* box-sizing: border-box */
   }
+  /* .sc-content-div-child{
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+  } */
 </style>

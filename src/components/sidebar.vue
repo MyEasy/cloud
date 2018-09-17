@@ -1,8 +1,8 @@
 <template>
   <div class="sc-sidebar-div">
-    <div class="sc-sidebar-div-child">
+    <div class="sc-sidebar-div-child" :class="{active: isClickShowLeft}" @mouseout="isHiddenLeft">
       <div class="sc-sidebar-div-product">
-        <div class="sc-sidebar-wrapper">
+        <div class="sc-sidebar-wrapper" @click="isShowProduct">
           <span class="sc-sidebar-span">
             <i class="iconfont icon-jiugongge sc-sidebar-i"></i>
           </span>
@@ -24,6 +24,9 @@
         </li>
       </ul>
     </div>
+    <transition name="fade">
+      <div class="sc-sidebar-product" v-show="isShow"></div>
+    </transition>
   </div>
 </template>
 <script>
@@ -32,13 +35,36 @@ export default {
   data () {
     return {
       sideBarList: sideBarList,
-      selectItem: -1
+      selectItem: -1,
+      isShow: false,
+      isClickShowLeft: false
     }
+  },
+  mounted () {
+    this.onRouterEnter()
   },
   methods: {
     myFocus (index, item) {
       this.selectItem = index
       this.$router.push({name: item.link})
+    },
+    onRouterEnter () {
+      let sPath = this.$route.name
+      for (let i = 0; i < sideBarList.length; i++) {
+        if (sideBarList[i].name === sPath) {
+          this.selectItem = i
+          return
+        }
+      }
+    },
+    isShowProduct () {
+      this.isClickShowLeft = true
+      this.isShow = !this.isShow
+    },
+    isHiddenLeft () {
+      if (!this.isShow) {
+        this.isClickShowLeft = false
+      }
     }
   }
 }
@@ -51,6 +77,7 @@ export default {
     top: 50px;
     position: fixed;
     background-color:  #252a2f;
+    z-index: 999;
   }
   .sc-sidebar-div-child{
     overflow: hidden;
@@ -63,6 +90,9 @@ export default {
     transition: all .3s cubic-bezier(0,0,.2,1);
   }
   .sc-sidebar-div-child:hover{
+    width: 230px;
+  }
+  .sc-sidebar-div-child.active{
     width: 230px;
   }
   .sc-sidebar-div-product{
@@ -93,6 +123,10 @@ export default {
     line-height: 40px;
     height: 40px;
     font-size: 0;
+    cursor: pointer;
+  }
+  .sc-sidebar-wrapper:hover{
+    background-color: #00c1de;
   }
   .sc-sidebar-span-width{
     color: #fff;
@@ -157,5 +191,32 @@ export default {
   }
   .sc-sidebar-icon-size{
     font-size: 16px;
+  }
+  .sc-sidebar-product{
+    position: absolute;
+    left: 230px;
+    width: 500px;
+    background-color: #fff;
+    transition: all .3s cubic-bezier(0,0,.2,1);
+    z-index: 99;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 4px 0 8px 0 rgba(0,0,0,.2);
+  }
+  /* .fade-enter-active, .fade-leave-active{
+    transition: opacity .5s
+  }
+  .fade-enter, .fade-leave-active{
+    opacity: 0;
+  } */
+  .fade-enter-active{
+    transition: all .5s ease;
+  }
+  .fade-leave-active{
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1)
+  }
+  .fade-enter, .fade-leave-to{
+    transform: translateX(-500px);
+    opacity: 0;
   }
 </style>

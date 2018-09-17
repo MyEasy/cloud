@@ -50,7 +50,7 @@ const router = new Router({
 //   }
 // }
 router.beforeEach((to, from, next) => {
-  debugger
+  // debugger
   // childRouter(loginRouter, to.name, router, next)
   // router.replace({name: 'login'})
   next()

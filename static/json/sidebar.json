@@ -2,66 +2,79 @@
   {
     "title": "防火墙",
     "icon": "iconfont icon-fanghuoqiang",
-    "link": "fw"
+    "link": "fw",
+    "name": "fw"
   },
   {
     "title": "IPS",
     "icon": "iconfont icon-IPS",
-    "link": "ips"
+    "link": "ips",
+    "name": "ips"
   },
   {
     "title": "防病毒",
     "icon": "iconfont icon-xunifangbingduxitong",
-    "link": "av"
+    "link": "av",
+    "name": "av"
   },
   {
     "title": "负载均衡",
     "icon": "iconfont icon-fuzaijunheng",
-    "link": "lb"
+    "link": "lb",
+    "name": "lb"
   },
   {
     "title": "NAT",
     "icon": "iconfont icon-nat",
-    "link": "nat"
+    "link": "nat",
+    "name": "nat"
   },
   {
     "title": "VPN",
     "icon": "iconfont icon-VPNwangguan",
-    "link": "vpn"
+    "link": "vpn",
+    "name": "vpn"
   },
   {
     "title": "DDoS",
     "icon": "iconfont icon-ddos",
-    "link": "ddos"
+    "link": "ddos",
+    "name": "ddos"
   },
   {
     "title": "WAF",
     "icon": "iconfont icon-waf",
-    "link": "waf"
+    "link": "waf",
+    "name": "waf"
   },
   {
     "title": "应用监控",
     "icon": "iconfont icon-yingyongjiankong",
-    "link": "monitor"
+    "link": "monitor",
+    "name": "monitor"
   },
   {
     "title": "漏洞扫描",
     "icon": "iconfont icon-loudongsaomiao",
-    "link": "leakscan"
+    "link": "leakscan",
+    "name": "leakscan"
   },
   {
     "title": "态势感知",
     "icon": "iconfont icon-taishiganzhi",
-    "link": "nssa"
+    "link": "nssa",
+    "name": "nssa"
   },
   {
     "title": "运维审计",
     "icon": "iconfont icon-13yunweishenji",
-    "link": "operationalaudit"
+    "link": "operationalaudit",
+    "name": "operationalaudit"
   },
   {
     "title": "数据库审计",
     "icon": "iconfont icon-shujukushenji",
-    "link": "dbaudit"
+    "link": "dbaudit",
+    "name": "dbaudit"
   }
 ]
