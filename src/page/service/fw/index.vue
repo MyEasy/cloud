@@ -6,6 +6,7 @@
       active-text="开启语音识别"
       inactive-text="关闭语音识别">
     </el-switch>
+    <el-button @click="axiosBtnClick">请求</el-button>
   </div>
 </template>
 
@@ -20,6 +21,14 @@ export default {
     // debugger
   },
   methods: {
+    axiosBtnClick () {
+      this.$axios({
+        method: 'GET',
+        url: 'users/zcw'
+      }).then((res) => {
+        debugger
+      })
+    },
     openOrClose () {
       var self = this
       try {
